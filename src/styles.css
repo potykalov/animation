@@ -1,7 +1,121 @@
 body {
-    margin: 0;
-    padding: 2rem;
-    font-family: system-ui, sans-serif;
-    color: #1c78c0;
-    background-color: #f5f7fa;
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  color: #1c78c0;
+  background-color: #f5f7fa;
+  box-sizing: border-box;
+}
+
+.collapsible__button {
+  font-family: inherit;
+  border: none;
+  color: #ffffff;
+  background-color: #0169d9;
+  border-radius: 7px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+
+.collapsible__button:hover,
+.collapsible__button:focus-visible {
+  background-color: #015bbc;
+}
+
+.collapsible__button:focus-visible {
+  outline: none;
+}
+
+.collapsible__button:active {
+  background-color: #004a98;
+}
+
+.collapsible__content {
+  color: #000000;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in;
+}
+
+.collapsible__text {
+  padding: 20px 40px;
+  border: 1px solid #9c9c9c;
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+.callback-chat__button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #fe0100;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+}
+
+.callback-chat__modal {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 2px rgba(14, 0, 35, 0.29);
+  width: 300px;
+  inset: auto;
+  padding: 20px;
+  position: fixed;
+  bottom: 75px;
+  right: 75px;
+}
+
+.callback-chat__content {
+  display: grid;
+}
+
+.callback-chat__content-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.callback-chat__header {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.callback-chat__close {
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.callback-chat__button:hover {
+  transform: scale(1.2);
+}
+
+.callback-chat__form {
+  display: grid;
+}
+
+.callback-chat__field {
+  resize: vertical;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+.callback-chat__submit {
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  font-family: inherit;
+  color: #000000;
+  cursor: pointer;
 }

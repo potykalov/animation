@@ -1,7 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "My webpack project",
-  "name": "webpack-project",
+  "name": "animation",
   "type": "module",
   "scripts": {
     "prod": "webpack --mode=production --config-node-env=production",
